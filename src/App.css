@@ -1,20 +1,20 @@
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #333447;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +22,118 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  font-family: Roboto;
+
 }
 
-.App-link {
-  color: #61dafb;
+.panel {
+  background-color: white;
+  border: 1px solid #282c34;
+  border-radius: 20px;
+  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.507);
+  padding: 15px;
+  text-align: left;
+  color: black;
+  display: flex;
+  flex-direction: row;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.illustration {
+  width: 270px;
+  height: auto;
+  border-radius: 15px;
+}
+
+.contentPanel {
+  width: 260px;
+  height: 400px;
+  text-align: left;
+  margin-right: 40px;
+  margin-left: 30px;
+  /* background-color: wheat; */
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+.description {
+  margin-bottom: 30px;
+  font-size: 12px;
+  color: grey;
+}
+
+.tickContainer {
+  margin-bottom: 12px;
+}
+
+.tickImage {
+  margin-right: 10px;
+  width: 15px;
+}
+
+.tickTitle {
+  font-size: 10px;
+  font-weight: 500;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.formTitle {
+  font-size: 8px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.formInput {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+  font-size: 12px;
+}
+
+.Button {
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #36384e;
+  width: 100%;
+}
+
+.Button:hover {
+  background: linear-gradient(to right, #FF5379 , #FF693A);
+  box-shadow:  0px 10px 30px 5px rgba(255, 83, 121, 0.2), 0px 10px 30px 5px rgba(255, 105, 58, 0.2);
+}
+
+.errorMessage {
+  font-size: 8px;
+  font-weight: 800;
+}
+
+/* Success screen */
+
+.successPanel {
+  width: 260px;
+  text-align: left;
+  margin-right: 30px;
+  margin-left: 30px;
+  /* background-color: wheat; */
+}
+
+.bigTickImage {
+  margin-top: 30px;
+  width: 50px;
 }
